@@ -1,0 +1,25 @@
+{
+  "name": "habbo-game",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rimraf dist && babel ./ --out-dir dist/ --ignore ./node_modules",
+    "start": "nodemon --exec babel-node index --quiet"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/polyfill": "^7.2.5",
+    "babel-plugin-wildcard": "^5.0.0",
+    "log4js": "^3.0.6",
+    "moment": "^2.24.0",
+    "rethinkdb": "^2.3.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "rimraf": "^2.6.2"
+  }
+}
